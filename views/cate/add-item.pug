@@ -1,0 +1,17 @@
+extends ../layout/common
+block content
+	h1 Add Item
+	if errors
+		each error in errors
+			.alert.alert-danger= error 
+	form(action="/cate/add-item", method="POST", enctype="multipart/form-data")
+		.form-group
+			label(for="name") Product
+			input#name.form-control(type="text", name="name", value=values ? values.name : '')
+		.form-group
+			label(for="price") Price
+			input#price.form-control(type="text", name="price", value=values ? values.price : '')
+		.form-group
+			label(for="img") Image
+			input#img.form-control-file(type="file", name="img")
+		button.mt-3.btn.btn-primary Add

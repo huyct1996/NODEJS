@@ -1,0 +1,25 @@
+extends ../layout/common.pug
+block content
+	h1 
+		span.mr-3 Category
+		a.btn.btn-primary(href="/cate/add-item") Add Item
+	a(href="/auth/logout") Logout
+	.d-flex.align-items-center
+		form.ml-auto(action='/cate/search', method='GET')
+			input(type='text', name='product', value = value)
+			button.ml-2.btn.btn-primary Search
+	table.table
+		tr
+			th Name
+			th Price
+			th Action
+		each item in category
+			tr
+				td
+					img(src="../"+ item.img, width="64")
+				td= item.name
+				td= item.price
+				td
+					a.btn.btn-light(href='/cate/'+ item.id) View
+					a.btn.btn-light(href='/cate/delete/'+ item.id) Delete
+					a.btn.btn-light(href='/cart/' + item.id) Add Cart

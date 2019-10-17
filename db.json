@@ -1,0 +1,48 @@
+{
+  "category": [
+    {
+      "name": "Chuột",
+      "price": "20000",
+      "id": "EiY4gLiO",
+      "img": "uploads/2c1a152a580e12b3572058419f2ef7a3"
+    },
+    {
+      "name": "Lót chuột",
+      "price": "100000",
+      "id": "NzFpKUKH",
+      "img": "uploads/3f304282c9a0204040bf9fdb117115fe"
+    }
+  ],
+  "users": [
+    {
+      "name": "Huy",
+      "email": "huy@gmail.com",
+      "password": "123",
+      "id": "FeMOCCa6"
+    }
+  ],
+  "cart": [
+    {},
+    {
+      "id": "duarkwrx",
+      "product": {
+        "EiY4gLiO": 1,
+        "NzFpKUKH": 1
+      }
+    },
+    {
+      "id": "-X0G12QQ",
+      "product": {
+        "EiY4gLiO": 1,
+        "NzFpKUKH": 1
+      }
+    },
+    {
+      "id": "WPkA2xKb",
+      "product": {
+        "EiY4gLiO": 3,
+        "5d8d8f930038b2232a5c673c": 2
+      }
+    }
+  ]
+}
